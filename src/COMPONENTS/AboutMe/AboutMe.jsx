@@ -29,7 +29,7 @@ const AboutMe = observer(() => {
 
     return (
 
-        <div className={styles.main}>
+        <div className={styles.main} id='about_me'>
             
             <div className={styles.linksWrapper}>
                 <a href='https://t.me/VLadNIkOonline' target='_blank' className={styles.link}>

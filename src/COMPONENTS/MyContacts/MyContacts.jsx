@@ -7,7 +7,7 @@ import SocialLink from '../../UI/SocialLink/SocialLink';
 const MyContacts = () => {
 
     return (
-        <div className={styles.main}>
+        <div className={styles.main} id='contacts'>
             <img src="./photo/smsFon.jpg" className={styles.smsFon} />
             
             <h1 className={styles.title}>my contacts</h1>

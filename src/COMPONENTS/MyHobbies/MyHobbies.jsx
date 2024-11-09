@@ -27,7 +27,7 @@ const MyHobbies = observer(() => {
 
 
     return (
-        <div className={styles.main}> 
+        <div className={styles.main} id='live'> 
             <h1 className={styles.title}>my live</h1>
 
             <div className={styles.content}>

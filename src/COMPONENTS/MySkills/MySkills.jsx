@@ -3,7 +3,7 @@ import styles from './MySkills.module.scss';
 
 const MySkills = () => {
     return (
-        <div className={styles.main}>
+        <div className={styles.main} id='skills'>
 
             <div className={styles.mainWrapper}>
                 <div className={styles.w1}>

@@ -16,7 +16,7 @@ import 'swiper/css/pagination';
 
 const MyWorks = () => {
     return (
-        <div className={styles.main}>
+        <div className={styles.main} id='works'>
             <h1 className={styles.title}>my works</h1>
             <Swiper 
                 className={styles.swiper}

@@ -1,0 +1,133 @@
+@import '../../../assets/colors.scss';
+
+
+.main{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.fonImg{
+    position: absolute;
+    inset: 0;
+    height: inherit;
+    object-fit: cover;
+    width: 100%;
+    opacity: .1;
+    filter: grayscale(100%) blur(2px);
+    z-index: -1;
+    pointer-events: none;
+}
+
+.content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.leftContent{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.k2{
+    width: 550px;
+    pointer-events: none;
+}
+
+ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: flex-start;
+    gap: 10px;
+
+    li{
+        text-transform: uppercase;
+    }
+}
+
+
+.k3{
+    width: 450px;
+    pointer-events: none;
+    position: relative;
+    border-radius: 15px;
+    opacity: 0.7;
+}
+
+.k4{
+    pointer-events: none;
+    width: 550px;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+@media (max-width: 1130px){
+    .rigthContent{
+        display: flex;
+        flex-direction: column;
+    }
+    .k2{
+        width: 300px;
+    }
+    
+    .k3, .k4{
+        width: 300px;
+        margin-bottom: 30px;
+    }
+    li{
+        font-size: 12px;
+        text-align: left;
+    }
+}
+
+@media (max-width: 635px){
+    .k2{
+        width: 200px;
+        margin-left: 10px;
+    }
+    
+    .k3, .k4{
+        width: 200px;
+        margin-right: 10px;
+        margin-bottom: 30px;
+    }
+    ul{
+        padding-inline-start: 20px;
+        padding-inline-end: 10px;
+    }
+    li{
+        font-size: 10px;
+        text-align: left;
+    }
+}
+
+@media (max-width: 435px){
+    .content{
+        flex-direction: column;
+    }
+    .k2{
+        width: 200px;
+        margin-left: 10px;
+        margin-top: 30px;
+    }
+    
+    .k3{
+        // display: none;
+        width: 210px;
+        margin-right: 10px;
+        margin-top: auto;
+    }
+    .k4{
+        display: none;
+        
+    }
+    li{
+        font-size: 8px;
+        text-align: left;
+    }
+}

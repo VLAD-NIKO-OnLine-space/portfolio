@@ -1,0 +1,145 @@
+@import '../../assets/colors.scss';
+
+$bgColor: rgba(17, 17, 17, .9);
+$textColor: $backgroundColor;
+
+@keyframes anim {
+    0%{
+        opacity: 0;
+        filter: blur(5px);
+    }
+    50%{
+        opacity: 1;
+        filter: blur(0);
+    }
+    80%{
+        opacity: 1;
+        filter: blur(0);
+    }
+    100%{
+        opacity: .1;
+        filter: blur(5px);
+
+    }
+}
+.main{
+    padding: 10px;
+    color: $textColor;
+    opacity: 0;
+    filter: blur(5px);
+    position: relative;
+    height: 80vh;
+    max-height: 676px;
+    box-shadow: $blockShadow;
+    position: relative;
+    background-color: $blockColor;
+    border-radius: 5px;
+    margin-bottom: 60px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    animation-name: anim;
+    animation-timing-function: ease-in-out;
+    view-timeline-name: --fade-in-image;
+    animation-timeline: --fade-in-image;
+    animation-range: 10% 90%;
+    align-items: center;
+    animation-fill-mode: forwards;
+
+}
+.fon{
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    
+
+}
+
+.smsFon{
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    z-index: -5;
+    filter: grayscale(100%) brightness(.5);
+    opacity: 0.1;
+}
+.title{
+    position: absolute;
+    top: -29px;
+    left: 30px;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 80px;
+    color: #fff;
+    user-select: none;
+    pointer-events: none;
+}
+.content{
+    display: flex;
+    align-items: center;
+    height: auto;
+    border-radius: 5px;
+    background-color: transparent;
+    justify-content: center;
+    animation-name: test;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    box-shadow: rgba(255, 255, 255, 0.25) 0px 14px 55px, rgba(255, 255, 255, 0.12) 0px -12px 30px, rgba(255, 255, 255, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(255, 255, 255, 0.09) 0px -3px 5px;
+
+    
+}
+
+@keyframes test {
+    0%{
+        transform: scale(102%);
+    }    
+    50%{
+        transform: scale(100%);
+    }
+    100%{
+        transform: scale(102%);
+    }
+}
+
+.links{
+    height: 450px;
+    width: 320px;
+    display: flex;
+    border-radius: 0 5px 5px 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    background-color: #3b3251;
+    padding: 50px;
+
+}
+
+
+
+
+@media (max-width: 740px){
+    .title{
+        font-size: 36px;
+        transform: translateY(15px);
+    }
+    .links{
+        width: 200px;
+    }
+}
+
+@media (max-width: 580px){
+    .links{
+        display: none;
+    }
+}
+
+@media (max-width: 330px){
+    .title{
+        font-size: 24px;
+        transform: translateY(20px);
+    }
+}

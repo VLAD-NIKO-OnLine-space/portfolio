@@ -1,0 +1,71 @@
+@import '../../../assets/colors.scss';
+
+
+.main{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.fonImg{
+    position: absolute;
+    object-fit: cover;
+    inset: 0;
+    height: inherit;
+    width: 100%;
+    opacity: .1;
+    filter: grayscale(80%) blur(2px);
+    z-index: -1;
+    pointer-events: none;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.f2, .f3{
+    width: 400px;
+    border-radius: 12px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.f2{
+    transform: translateX(40px);
+}
+
+
+@media (max-width: 950px){
+    .f2, .f3{
+        width: 300px;
+        margin-right: 10px;
+    }
+    .f2{
+        transform: translateX(0);
+    }
+}
+
+@media (max-width: 530px){
+    .main{
+        gap: 5px;
+    }
+    .f2, .f3{
+        width: 250px;
+        margin-right: 10px;
+    }
+    .f2{
+        transform: translateX(0);
+    }
+}
+
+@media (max-width: 425px){
+    .f2, .f3{
+        width: 200px;
+        margin-right: 10px;
+    }
+    .f2{
+        transform: translateX(0);
+    }
+}

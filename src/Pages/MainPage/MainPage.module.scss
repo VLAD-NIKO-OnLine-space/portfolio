@@ -1,0 +1,25 @@
+@import '../../assets/colors.scss';
+
+.mainPage{
+    position: relative;
+    padding-top: 10vh;
+}
+
+.splash{
+    position: absolute;
+}
+
+
+.allContent{
+    opacity: 0;
+    filter: blur(10px);
+    animation: moveContent 1.5s forwards ease-in;
+    animation-delay: 7.5s;
+}
+
+@keyframes moveContent {
+    100%{
+        opacity: 1;
+        filter: blur(0);
+    }
+}

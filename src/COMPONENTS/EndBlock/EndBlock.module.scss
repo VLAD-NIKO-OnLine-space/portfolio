@@ -1,0 +1,86 @@
+@import '../../assets/colors.scss';
+
+
+@keyframes anim {
+    0%{
+        opacity: .1;
+        filter: blur(5px);
+    }
+    50%{
+        opacity: 1;
+        filter: blur(0);
+    }
+    80%{
+        opacity: 1;
+        filter: blur(0);
+    }
+    100%{
+        opacity: .1;
+        filter: blur(5px);
+    }
+}
+
+$bgColor: rgba(17, 17, 17, .9);
+$textColor: $backgroundColor;
+
+.main{
+    // border: 1px solid #fff;
+    // margin-top: 5px;
+    // padding: 10px;
+    color: $textColor;
+    // opacity: .1;
+    // filter: blur(5px);
+    // padding-right: 50px;
+    position: relative;
+    height: 25vh;
+    box-shadow: $blockShadow;
+    position: relative;
+    background-color: $blockColor;
+    border-radius: 5px;
+    // margin-bottom: 60px;
+    // overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    // animation-name: anim;
+    // animation-timing-function: linear;
+    // view-timeline-name: --fade-in-image;
+    // animation-timeline: --fade-in-image;
+    // animation-range: 10% 90%;
+    // animation-timeline: scroll();
+    // animation-range: 0 700px;
+    // justify-content: right;
+}
+
+.me1{
+    position: absolute;
+    width: 75px;
+    bottom: 0;
+    pointer-events: none;
+    animation-name: moveImage;
+
+}
+.me2{
+    position: absolute;
+    width: 75px;
+    bottom: 0;
+    pointer-events: none;
+    left: 20%;
+}
+.me3{
+    position: absolute;
+    width: 75px;
+    bottom: 0;
+    pointer-events: none;
+    right: 20%;
+}
+.title{
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 40px;
+    font-style: italic;
+}
+
+// =====================================
+

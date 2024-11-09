@@ -1,0 +1,28 @@
+
+
+
+
+.wrapper{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.items{
+    display: flex;
+    gap: 3px;
+    /* perspective: calc($index * 35); */
+}
+
+.item{
+    /* width: calc($index * 5);
+    height: calc($index * 15); */
+    width: 100px;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    filter: grayscale(1) brightness(.5);
+}

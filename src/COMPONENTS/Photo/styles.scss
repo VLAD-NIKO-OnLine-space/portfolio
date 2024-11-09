@@ -1,0 +1,19 @@
+.swiper {
+  width: 100%;
+  cursor: grab;
+}
+
+
+
+.swiper-slide {
+  height: 380px;
+  text-align: center;
+  position: relative;
+  filter: grayscale(1) brightness(.6);
+  transition: .3s all linear;
+  &:hover{
+    filter: grayscale(0) brightness(1);
+    transform: scale(105%);
+  }
+}
+

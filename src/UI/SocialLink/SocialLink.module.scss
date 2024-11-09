@@ -1,0 +1,50 @@
+@import '../../assets/colors.scss';
+
+$color: var(--c);
+
+
+.link{
+    background-color: #fff;
+    width: 200px;
+    padding: 15px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    color: #000;
+    transition: .2s all linear;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &:hover{
+        transform: scale(1.1);
+        background-color: $color;
+        .icon{
+            filter: grayscale(0);
+            
+        }
+        .par{
+            color: #fff;
+        }
+
+    }
+}
+
+.icon{
+    width: 35px;
+    margin-right: 15px;
+    filter: grayscale(1);
+    transition: .2s all linear;
+
+}
+
+.par{
+    text-transform: uppercase;
+}
+
+@media (max-width: 740px){
+    .link{
+        width: 140px;
+        padding: 12px 15px;
+        font-size: 12px;
+    }
+}

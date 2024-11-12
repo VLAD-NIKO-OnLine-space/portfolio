@@ -19,14 +19,17 @@ $textColor: rgba(255, 255, 255, .9);
 .wrapper{
     background-color: $bgColor;
     padding: 20px;
-    height: 100px;
+    height: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 5px;
+    -webkit-tap-highlight-color:  rgba(255, 255, 255, 0); 
     cursor: pointer;
     transition: .3s all linear;
     color: $textColor;
+    text-align: center;
+    user-select: none;
     &:hover{
         transform: translateY(-20px);
         box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -36,9 +39,12 @@ $textColor: rgba(255, 255, 255, .9);
 
 .wrapperNone{
     background-color: $bgColor;
+    user-select: none;
     padding: 20px;
-    height: 100px;
+    height: 80px;
+    text-align: center;
     display: flex;
+    -webkit-tap-highlight-color:  rgba(255, 255, 255, 0); 
     justify-content: center;
     align-items: center;
     border-radius: 5px;
@@ -48,4 +54,26 @@ $textColor: rgba(255, 255, 255, .9);
     transform: translateY(-20px);
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     background-color: rgba(255, 215, 0, .9);
+}
+
+
+@media (max-width: 700px){
+    .wrapper, .wrapperNone{
+        height: 50px;
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 380px){
+    .nav{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+    .wrapper, .wrapperNone{
+        height: 50px;
+        font-size: 12px;
+    }
+    .wrapperNone{
+        transform: translateY(0);
+    }
 }

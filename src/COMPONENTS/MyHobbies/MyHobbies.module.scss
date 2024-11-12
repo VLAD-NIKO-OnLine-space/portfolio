@@ -28,13 +28,10 @@ $bgColor: rgba(17, 17, 17, .9);
 $textColor: $backgroundColor;
 
 .main{
-    // border: 1px solid #fff;
-    // margin-top: 5px;
     padding: 10px;
     color: $textColor;
     opacity: 0;
     filter: blur(5px);
-    // padding-right: 50px;
     position: relative;
     height: 80vh;
     box-shadow: $blockShadow;
@@ -45,6 +42,7 @@ $textColor: $backgroundColor;
     overflow: hidden;
     display: flex;
     max-height: 676px;
+    min-height: 675px;
 
     animation-name: anim;
     animation-timing-function: ease-in-out;
@@ -52,9 +50,7 @@ $textColor: $backgroundColor;
     animation-timeline: --fade-in-image;
     animation-range: 10% 90%;
     animation-fill-mode: forwards;
-    // animation-timeline: scroll();
-    // animation-range: 0 700px;
-    // justify-content: right;
+
 }
 
 .title{
@@ -74,7 +70,7 @@ $textColor: $backgroundColor;
     flex-direction: column;
     width: 100%;
     justify-content: center;
-    padding: 0 15px;
+    // padding: 0 15px;
     padding-bottom: 0;
 }
 
@@ -84,4 +80,22 @@ $textColor: $backgroundColor;
     position: relative;
     height: 50vh;
     transform: translateY(-20px);
+}
+
+// ================================
+
+
+
+@media (max-width:665px){
+    .title{
+        font-size: 52px;
+        transform: translateY(10px);
+    }
+}
+
+@media (max-width:320px){
+    .title{
+        font-size: 42px;
+        transform: translateY(15px) translateX(-10px);
+    }
 }

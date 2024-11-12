@@ -6,6 +6,8 @@ $textColor: $backgroundColor;
     color: $textColor;
     position: relative;
     height: 25vh;
+    max-height: 230px;
+    min-height: 230px;
     box-shadow: $blockShadow;
     position: relative;
     background-color: rgba(17, 17, 17, 1);;
@@ -76,9 +78,10 @@ $textColor: $backgroundColor;
 .water{
     position: absolute;
     bottom: 10px;
-    opacity: 1;
+    opacity: .2;
     font-weight: 300;
     text-transform: uppercase;
+    color: #fff;
 }
 
 

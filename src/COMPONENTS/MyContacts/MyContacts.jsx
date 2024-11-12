@@ -8,7 +8,7 @@ const MyContacts = () => {
 
     return (
         <div className={styles.main} id='contacts'>
-            <img src="./photo/smsFon.jpg" className={styles.smsFon} />
+            <img src="./photo/smsFon.jpg" className={styles.smsFon} loading='lazy'/>
             
             <h1 className={styles.title}>my contacts</h1>
             <div className={styles.content}>
@@ -29,7 +29,7 @@ const MyContacts = () => {
                     />
 
                     <SocialLink 
-                        Href={'#'} 
+                        Href={'https://github.com/VLAD-NIKO-OnLine-space'} 
                         icon={'./icons/github.svg'} 
                         linkName={'Github'} 
                         Color={'#000'}
@@ -41,10 +41,26 @@ const MyContacts = () => {
                         linkName={"What's app"} 
                         Color={'#00c256'}
                     />
-
                 </div>
+
             </div>
-            
+                <div className={styles.linksWrapper}>
+                    <a href='https://t.me/VLadNIkOonline' target='_blank' className={styles.link}>
+                        <img src="./icons/whiteIcons/telegram.svg"/>
+                    </a>
+
+                    <a href='https://vk.com/vladnikoonline'  target='_blank' className={styles.link}>
+                        <img src="./icons/whiteIcons/vk.svg"/>
+                    </a>
+
+                    <a href='https://github.com/VLAD-NIKO-OnLine-space' target='_blank' className={styles.link}>
+                        <img src="./icons/whiteIcons/github.svg"/>
+                    </a>
+
+                    <a href='https://api.whatsapp.com/send?phone=79001354142' target='_blank' className={styles.link}>
+                        <img src="./icons/whiteIcons/whatsapp.svg"/>
+                    </a>
+                </div>
         </div>
     );
 };

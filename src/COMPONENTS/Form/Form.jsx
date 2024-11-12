@@ -10,8 +10,6 @@ const Form = () => {
     const [value, setValue] = useState({userName: '', text: ''});
     const [visible, setVisible] = useState(false)
 
-
-
     const sendAMessage = async () => {
         if(value.userName && value.text){
             await sendMessage(value.userName, value.text)

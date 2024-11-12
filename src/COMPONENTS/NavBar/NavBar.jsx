@@ -14,10 +14,9 @@ const NavBar = observer(() => {
     return (
         <nav className={styles.nav}>
             <div id='code' onClick={handleClick} className={HobbiesChoice.choice=='code'? styles.wrapperNone:rootStyleWrapper}>Write a code, sure</div>
-
             <div id='family' onClick={handleClick} className={HobbiesChoice.choice=='family'? styles.wrapperNone:rootStyleWrapper}>My Family</div>
             <div id='photo' onClick={handleClick} className={HobbiesChoice.choice=='photo'? styles.wrapperNone:rootStyleWrapper}>Photo Game's</div>
-            <div id='sport' onClick={handleClick} className={HobbiesChoice.choice=='sport'? styles.wrapperNone:rootStyleWrapper}>My sport</div>
+            <div id='sport' onClick={handleClick} className={HobbiesChoice.choice=='sport'? styles.wrapperNone:rootStyleWrapper}>Other</div>
         </nav>
     );
 });

@@ -4,7 +4,7 @@ import styles from './FishWork.module.scss';
 const FishWork = () => {
     return (
         <div className={styles.main}>
-            <img src="./WorkPic/f1.png" className={styles.fonImg} />
+            <img src="./WorkPic/f1.png" className={styles.fonImg} loading='lazy'/>
 
             <ul>
                 <li>React | JSX | MobX | SCSS | Swiper JS</li>
@@ -16,8 +16,8 @@ const FishWork = () => {
             </ul>
 
             <div className={styles.content}>
-                <img src="./WorkPic/f2.png" className={styles.f2} />
-                <img src="./WorkPic/f3.png" className={styles.f3} />
+                <img src="./WorkPic/f2.png" className={styles.f2} loading='lazy'/>
+                <img src="./WorkPic/f3.png" className={styles.f3} loading='lazy'/>
 
             </div>
         </div>

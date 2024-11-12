@@ -3,11 +3,11 @@ import styles from './MyHobbies.module.scss';
 import NavBar from '../NavBar/NavBar';
 import { observer } from 'mobx-react-lite';
 import HobbiesChoice from '../../STORE/HobbiesChoice';
-import Sport from '../Sport/Sport';
 import MyFamily from '../MyFamily/MyFamily';
 import Photo from '../Photo/Photo';
 import MyCode from '../MyCode/MyCode';
 import './test.css';
+import Other from '../Other/Other';
 
 const MyHobbies = observer(() => {
 
@@ -16,7 +16,7 @@ const MyHobbies = observer(() => {
     let contentChoice = HobbiesChoice.choice
 
     if(HobbiesChoice.choice=='sport'){
-        contentChoice = <Sport/>
+        contentChoice = <Other/>
     } if(HobbiesChoice.choice=='photo'){
         contentChoice = <Photo/>
     } if(HobbiesChoice.choice=='family'){   

@@ -40,7 +40,7 @@ const AboutMe = observer(() => {
                     <img src="./icons/whiteIcons/vk.svg"/>
                 </a>
 
-                <a href='#' className={styles.link}>
+                <a href='https://github.com/VLAD-NIKO-OnLine-space' target='_blank' className={styles.link}>
                     <img src="./icons/whiteIcons/github.svg"/>
                 </a>
 

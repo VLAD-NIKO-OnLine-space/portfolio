@@ -4,13 +4,10 @@ import styles from './KinostocsWork.module.scss'
 const KinostocsWork = () => {
     return (
         <div className={styles.main}>
-            <img src="./WorkPic/k1.png" className={styles.fonImg} />
-
+            <img src="./WorkPic/k1.png" className={styles.fonImg} loading='lazy'/>
             <div className={styles.content}>
-
                 <div className={styles.leftContent}>
-                    <img src='./WorkPic/k2.png' className={styles.k2}/>
-
+                    <img src='./WorkPic/k2.png' className={styles.k2} loading='lazy'/>
                     <ul>
                         <li>React | JSX | AXIOS | MobX | API Kinopoisk | SCSS | Swiper JS</li>
                         <li>adaptability to mobile devices</li>
@@ -21,10 +18,9 @@ const KinostocsWork = () => {
                         <li>custom elements</li>
                     </ul>
                 </div>
-
                 <div className={styles.rigthContent}>
-                    <img src="./WorkPic/k3.png" className={styles.k3}/>
-                    <img src="./WorkPic/k4.png" className={styles.k4}/>
+                    <img src="./WorkPic/k3.png" className={styles.k3} loading='lazy'/>
+                    <img src="./WorkPic/k4.png" className={styles.k4} loading='lazy'/>
                 </div>
 
             </div>

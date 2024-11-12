@@ -4,7 +4,7 @@ import styles from './TimerWork.module.scss';
 const TimerWork = () => {
     return (
         <div className={styles.main}>
-            <img src="./WorkPic/timer.png" className={styles.fonImg} />
+            <img src="./WorkPic/timer.png" className={styles.fonImg} loading='lazy'/>
 
             <p>Marvel Timer - my first job with my idea is on HTML+CSS. No special mechanics, just a timer in style MARVEL. Hah, i just decided to add it here.😁</p>
         </div>

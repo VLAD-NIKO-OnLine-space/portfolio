@@ -1,16 +1,16 @@
 export function pop (e) {
-    let amount = 5;
+    let amount = 1;
     switch (e.target.dataset.type) {
         case 'shadow':
         case 'line':
-        amount = 5;
+        amount = 3;
         break;
     }
     if (e.clientX === 0 && e.clientY === 0) {
         const bbox = e.target.getBoundingClientRect();
         const x = bbox.left + bbox.width / 2;
         const y = bbox.top + bbox.height / 2;
-        for (let i = 0; i < 5; i++) {
+        for (let i = 0; i < 3; i++) {
             createParticle(x, y, e.target.dataset.type);
         }
         } else {

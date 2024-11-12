@@ -1,18 +1,16 @@
 import React from 'react';
-import { Swiper ,SwiperSlide } from 'swiper/react';
-import { Pagination, EffectFade, Scrollbar} from 'swiper/modules';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { EffectFade, Scrollbar } from 'swiper/modules';
 import styles from './MyWorks.module.scss';
-import 'swiper/css';
-import 'swiper/css/effect-fade';
-import 'swiper/css/scrollbar';
 import WeatherWork from './WeatherWork/WeatherWork';
 import KinostocsWork from './KinostocsWork/KinostocsWork';
 import FishWork from './FishWork/FishWork';
 import SDOWork from './SDOWork/SDOWork';
 import SpeedCodeWork from './SpeedCodeWork/SpeedCodeWork';
 import TimerWork from './TimerWork/TimerWork';
-import 'swiper/css/pagination';
-
+import 'swiper/css';
+import 'swiper/css/effect-fade';
+import 'swiper/css/scrollbar';
 
 const MyWorks = () => {
     return (
@@ -53,7 +51,6 @@ const MyWorks = () => {
                     <p className={styles.soon}>new jobs coming soon...</p>
                 </SwiperSlide>
             </Swiper>
-            
         </div>
     );
 };

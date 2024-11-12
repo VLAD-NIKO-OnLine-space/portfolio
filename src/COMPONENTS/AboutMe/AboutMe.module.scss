@@ -15,6 +15,7 @@
     position: relative;
     height: 80vh;
     max-height: 676px;
+    min-height: 675px;
     box-shadow: $blockShadow;
     position: relative;
     background-color: $blockColor;
@@ -211,9 +212,6 @@ $imageAndButtonSize: 500px;
 // ==============================
 
 @media (max-width: 1134px){
-    .main{
-        
-    }
 
     .buttonMusk, .image{
         height: 450px;

@@ -25,9 +25,9 @@ const MyFamily = () => {
                 </p>
             </div>
                 <div className={styles.container}>
-                    <img src="./family/1.jpg" className={styles.img} />
-                    <img src="./family/2.jpg" className={styles.img2} />
-                    <img src="./family/3.jpg" className={styles.img3} />
+                    <img src="./family/1.jpg" className={styles.img} loading='lazy'/>
+                    <img src="./family/2.jpg" className={styles.img2} loading='lazy'/>
+                    <img src="./family/3.jpg" className={styles.img3} loading='lazy'/>
                 </div>
 
         </div>
